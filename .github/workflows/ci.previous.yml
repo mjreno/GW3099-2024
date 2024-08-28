@@ -62,7 +62,8 @@ jobs:
       - name: Update environment file
         working-directory: .scripts
         run: |
-          python update_env_file.py
+          python update_env_file.py --conda
+          cat ../environment.yml
 
       - name: Install miniconda
         uses: conda-incubator/setup-miniconda@v3
