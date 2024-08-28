@@ -19,7 +19,7 @@ else:
     with open(file_path, "r") as f:
         lines = f.readlines()
 
-    tags = ("openmpi", "gfortran", "petsc", "netcdf-fortran", "meson", "ninja")
+    tags = ("openmpi", "compilers", "petsc", "netcdf-fortran", "meson", "ninja")
     update_file = True
     for line in lines:
         for tag in tags:
@@ -39,7 +39,7 @@ else:
                     f.write("  - openmpi<5.0.0\n")
                 else:
                     f.write("  - openmpi\n")
-                f.write("  - gfortran\n")
+                f.write("  - compilers\n")
                 f.write("  - petsc\n")
                 f.write("  - libnetcdf\n")
                 f.write("  - netcdf-fortran\n")
