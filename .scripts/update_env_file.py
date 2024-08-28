@@ -19,7 +19,14 @@ else:
     with open(file_path, "r") as f:
         lines = f.readlines()
 
-    tags = ("openmpi", "compilers", "petsc", "netcdf-fortran", "meson", "ninja")
+    tags = (
+        "openmpi",
+        "compilers",
+        "petsc",
+        "netcdf-fortran",
+        "meson",
+        "ninja",
+    )
     update_file = True
     for line in lines:
         for tag in tags:
