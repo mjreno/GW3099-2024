@@ -48,7 +48,7 @@ else:
                     f.write("  - openmpi\n")
                 f.write("  - compilers\n")
                 f.write("  - petsc\n")
-                f.write("  - libnetcdf\n")
+                # f.write("  - libnetcdf\n")
                 f.write("  - netcdf-fortran\n")
     else:
         print(f"No need to update...{file_path}")
