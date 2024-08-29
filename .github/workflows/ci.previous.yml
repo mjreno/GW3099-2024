@@ -95,6 +95,7 @@ jobs:
           meson setup builddir -Ddebug=false -Dextended=true --prefix=$(pwd) --libdir=bin
           meson install -C builddir
           meson test --verbose --no-rebuild -C builddir
+          ldd bin/mf6
 
       - name: Create symbolic links on Linux
         if: runner.os == 'Linux'

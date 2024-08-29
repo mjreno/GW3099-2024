@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - compilers
     paths-ignore:
       - '**.md'
   pull_request:
